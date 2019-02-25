@@ -168,7 +168,7 @@ Mappings:
 
   # These are the latest ECS optimized AMIs as of March 2018:
   #
-  #   (amzn-ami-2017.09.a-amazon-ecs-optimized)
+  #   (amzn2-ami-ecs-hvm-2.0.20190215-x86_64-ebs)
   #   ECS agent:    1.18.0
   #   Docker:       17.12.1-ce
   #   ecs-init:     1.18.0-1
@@ -179,35 +179,37 @@ Mappings:
 
   AWSRegionToAMI:
     us-east-2:
-      AMI: ami-8f4e74ea
+      AMI: ami-0b485bb5e24e0fa19
     us-east-1:
-      AMI: ami-fbc1c684
+      AMI: ami-095775a2445cb7ff7
     us-west-2:
-      AMI: ami-7ddf8005
+      AMI: ami-072ca073fa9b8b128
     us-west-1:
-      AMI: ami-638c6100
+      AMI: ami-09ebebeb27420060d
     eu-west-3:
-      AMI: ami-2187375c
+      AMI: ami-0210474827954ae61
     eu-west-2:
-      AMI: ami-e8a04a8f
+      AMI: ami-03ae4df38be5818e7
     eu-west-1:
-      AMI: ami-74e7fe9e
+      AMI: ami-02a2ea2b210628cc5
     eu-central-1:
-      AMI: ami-c123232a
+      AMI: ami-0d3777b4505b5fe15
+    eu-north-1:
+      AMI: ami-05c6f1ea1980e43c7
     ap-northeast-2:
-      AMI: ami-2095224e
+      AMI: ami-0467ca4c0f6ab904a
     ap-northeast-1:
-      AMI: ami-2b4d26c6
+      AMI: ami-0cfa84956cde58703
     ap-southeast-2:
-      AMI: ami-09bf186b
+      AMI: ami-0a96da37cfa9923a4
     ap-southeast-1:
-      AMI: ami-3b1d59d1
+      AMI: ami-004a3d8e79a88f9fe
     ca-central-1:
-      AMI: ami-06ac2162
+      AMI: ami-0d774ad11778bc75e
     ap-south-1:
-      AMI: ami-921d2efd
+      AMI: ami-0d95ea0e61c0cf5ec
     sa-east-1:
-      AMI: ami-0a8caa66
+      AMI: ami-06b53bdc7efc4fb83
 
 Conditions:
   EnableSSL: !Equals [!Ref 'UseSSL', 'yes']
